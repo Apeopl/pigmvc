@@ -25,6 +25,7 @@ public class DemoAction {
 	public void query(HttpServletRequest req, HttpServletResponse resp, @PigRequstParam("name") String name){
 		String result = demoService.sayHello(name);
 		try {
+			System.out.println("返回结果");
 			resp.getWriter().write(result);
 		} catch (IOException e) {
 			e.printStackTrace();
