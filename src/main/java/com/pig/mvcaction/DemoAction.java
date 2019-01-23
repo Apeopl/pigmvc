@@ -26,6 +26,7 @@ public class DemoAction {
 		String result = demoService.sayHello(name);
 		try {
 			System.out.println("返回结果");
+			System.out.println("返回结果");
 			resp.getWriter().write(result);
 		} catch (IOException e) {
 			e.printStackTrace();
